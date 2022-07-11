@@ -1,0 +1,21 @@
+<div class="container">
+    <br><br>
+    <h1 class="text-center">
+        Tweet Watcher
+    </h1>
+    <br>
+    <div class="form-group">
+        <input (keyup)="getValue(url.value)"
+        #url class="form-control" type="text" name="url" placeholder="Insira o usuário" id="">
+    </div>
+
+    <ngx-twitter-timeline
+    [data]="data"
+    [opts]="{tweetLimit:10}" 
+    >
+
+
+    </ngx-twitter-timeline>
+
+
+</div>
